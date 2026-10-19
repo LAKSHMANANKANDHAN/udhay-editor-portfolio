@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <filter id="neon" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Background Glow -->
+  <circle cx="50" cy="50" r="45" fill="#050505" stroke="#FF153C" stroke-width="2" />
+  
+  <!-- Spider Web Lines -->
+  <path d="M50 5 L50 95 M5 50 L95 50 M18 18 L82 82 M18 82 L82 18" stroke="#8B0015" stroke-width="1.2" opacity="0.6"/>
+  <circle cx="50" cy="50" r="18" fill="none" stroke="#FF153C" stroke-width="1" opacity="0.4"/>
+  <circle cx="50" cy="50" r="32" fill="none" stroke="#FF153C" stroke-width="1" opacity="0.3"/>
+
+  <!-- Iconic Stylized Superhero Spider Emblem -->
+  <!-- Body -->
+  <path d="M50 34 C44 34 42 42 42 50 C42 58 46 68 50 74 C54 68 58 58 58 50 C58 42 56 34 50 34 Z" fill="#FF153C" filter="url(#neon)"/>
+  <!-- Head -->
+  <circle cx="50" cy="27" r="6" fill="#FF153C" filter="url(#neon)"/>
+  
+  <!-- Legs (4 on each side) -->
+  <!-- Upper Legs -->
+  <path d="M44 40 Q25 24 16 35" stroke="#FF153C" stroke-width="3" stroke-linecap="round" fill="none" filter="url(#neon)"/>
+  <path d="M56 40 Q75 24 84 35" stroke="#FF153C" stroke-width="3" stroke-linecap="round" fill="none" filter="url(#neon)"/>
+
+  <!-- Mid-Upper Legs -->
+  <path d="M42 48 Q20 40 12 55" stroke="#FF153C" stroke-width="3" stroke-linecap="round" fill="none" filter="url(#neon)"/>
+  <path d="M58 48 Q80 40 88 55" stroke="#FF153C" stroke-width="3" stroke-linecap="round" fill="none" filter="url(#neon)"/>
+
+  <!-- Mid-Lower Legs -->
+  <path d="M43 56 Q22 65 18 80" stroke="#FF153C" stroke-width="3" stroke-linecap="round" fill="none" filter="url(#neon)"/>
+  <path d="M57 56 Q78 65 82 80" stroke="#FF153C" stroke-width="3" stroke-linecap="round" fill="none" filter="url(#neon)"/>
+
+  <!-- Lower Legs -->
+  <path d="M46 64 Q32 80 28 92" stroke="#FF153C" stroke-width="3" stroke-linecap="round" fill="none" filter="url(#neon)"/>
+  <path d="M54 64 Q68 80 72 92" stroke="#FF153C" stroke-width="3" stroke-linecap="round" fill="none" filter="url(#neon)"/>
+</svg>

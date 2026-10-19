@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --neon-red: #FF153C;
+  --dark-crimson: #8B0015;
+  --bg-deep: #050505;
+  --charcoal: #111111;
+  --silver-glow: #F5F5F5;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #08080c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #25080e;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 21, 60, 0.4);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF153C;
+  box-shadow: 0 0 10px #FF153C;
+}
+
+/* Spider multiverse background grid & scan lines */
+.bg-superhero-grid {
+  background-size: 50px 50px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 21, 60, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 21, 60, 0.05) 1px, transparent 1px);
+}
+
+.bg-radial-vignette {
+  background: radial-gradient(circle at 50% 50%, rgba(255, 21, 60, 0.08) 0%, rgba(5, 5, 5, 0.95) 75%);
+}
+
+.bg-hero-glow {
+  background: radial-gradient(ellipse at 70% 30%, rgba(255, 21, 60, 0.18) 0%, rgba(139, 0, 21, 0.08) 40%, transparent 70%);
+}
+
+/* Glowing text and borders */
+.text-neon-glow {
+  text-shadow: 0 0 10px rgba(255, 21, 60, 0.7), 0 0 25px rgba(255, 21, 60, 0.4);
+}
+
+.text-silver-glow {
+  text-shadow: 0 0 12px rgba(245, 245, 245, 0.6);
+}
+
+.border-neon-glow {
+  border-color: rgba(255, 21, 60, 0.4);
+  box-shadow: 0 0 15px rgba(255, 21, 60, 0.25);
+}
+
+/* Glassmorphism */
+.glass-panel {
+  background: rgba(17, 17, 24, 0.65);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 21, 60, 0.18);
+}
+
+.glass-panel-elevated {
+  background: rgba(20, 20, 30, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 21, 60, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.6);
+}
+
+/* Cinematic Web Laser Scan line */
+@keyframes scanline {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(1000%); }
+}
+
+.scanline-effect {
+  animation: scanline 8s linear infinite;
+}
+
+/* Custom 3D Tilt perspective */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+/* Custom Cursor */
+@media (min-width: 1024px) {
+  .custom-cursor-active,
+  .custom-cursor-active a,
+  .custom-cursor-active button,
+  .custom-cursor-active input,
+  .custom-cursor-active textarea,
+  .custom-cursor-active [role="button"] {
+    cursor: none !important;
+  }
+}
